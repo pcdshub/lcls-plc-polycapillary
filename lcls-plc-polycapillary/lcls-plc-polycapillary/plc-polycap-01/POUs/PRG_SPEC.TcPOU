@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_SPEC" Id="{790d3e76-e969-4252-8a13-08f65b5816ff}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_SPEC
+VAR
+    // iCount : INT;
+    fbPOLYCAP_DET_Z: FB_MotionStage;
+    fbPOLYCAP_CRY_N_SWI: FB_MotionStage;
+    fbPOLYCAP_CRY_N_X: FB_MotionStage;
+    fbPOLYCAP_CRY_N_ROT: FB_MotionStage;
+    fbPOLYCAP_CRY_N_Y: FB_MotionStage;
+    fbPOLYCAP_PC_N_X: FB_MotionStage;
+    fbPOLYCAP_PC_N_Z: FB_MotionStage;
+    fbPOLYCAP_PC_N_Y: FB_MotionStage;
+    fbPOLYCAP_CRY_S_SWI: FB_MotionStage;
+    fbPOLYCAP_CRY_S_X: FB_MotionStage;
+    fbPOLYCAP_CRY_M_SWI: FB_MotionStage;
+    fbPOLYCAP_CRY_M_X: FB_MotionStage;
+    fbPOLYCAP_CRY_S_ROT: FB_MotionStage;
+    fbPOLYCAP_CRY_S_Y: FB_MotionStage;
+    fbPOLYCAP_CRY_M_ROT: FB_MotionStage;
+    fbPOLYCAP_CRY_M_Y: FB_MotionStage;
+    fbPOLYCAP_PC_S_X: FB_MotionStage;
+    fbPOLYCAP_PC_S_Z: FB_MotionStage;
+    fbPOLYCAP_PC_M_X: FB_MotionStage;
+    fbPOLYCAP_PC_M_Z: FB_MotionStage;
+    fbPOLYCAP_PC_S_Y: FB_MotionStage;
+    fbPOLYCAP_PC_M_Y: FB_MotionStage;
+    stMotionStage: INT;
+
+
+    // Only do some of the puts on init
+    bInit: BOOL := FALSE;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// iCount:=iCount+1;
+fbPOLYCAP_DET_Z(stMotionStage:=Main.M1);
+fbPOLYCAP_CRY_N_SWI(stMotionStage:=Main.M2);
+fbPOLYCAP_CRY_N_X(stMotionStage:=Main.M3);
+fbPOLYCAP_CRY_N_ROT(stMotionStage:=Main.M4);
+fbPOLYCAP_CRY_N_Y(stMotionStage:=Main.M5);
+fbPOLYCAP_PC_N_X(stMotionStage:=Main.M6);
+fbPOLYCAP_PC_N_Z(stMotionStage:=Main.M7);
+fbPOLYCAP_PC_N_Y(stMotionStage:=Main.M8);
+fbPOLYCAP_CRY_S_SWI(stMotionStage:=Main.M9);
+fbPOLYCAP_CRY_S_X(stMotionStage:=Main.M10);
+fbPOLYCAP_CRY_M_SWI(stMotionStage:=Main.M11);
+fbPOLYCAP_CRY_M_X(stMotionStage:=Main.M12);
+fbPOLYCAP_CRY_S_ROT(stMotionStage:=Main.M13);
+fbPOLYCAP_CRY_S_Y(stMotionStage:=Main.M14);
+fbPOLYCAP_CRY_M_ROT(stMotionStage:=Main.M15);
+fbPOLYCAP_CRY_M_Y(stMotionStage:=Main.M16);
+fbPOLYCAP_PC_S_X(stMotionStage:=Main.M17);
+fbPOLYCAP_PC_S_Z(stMotionStage:=Main.M18);
+fbPOLYCAP_PC_M_X(stMotionStage:=Main.M19);
+fbPOLYCAP_PC_M_Z(stMotionStage:=Main.M20);
+fbPOLYCAP_PC_S_Y(stMotionStage:=Main.M21);
+fbPOLYCAP_PC_M_Y(stMotionStage:=Main.M22);
+
+
+
+
+
+
+
+
+IF NOT bInit THEN // Easier to debug if you can write to these
+    Main.M1.bHardwareEnable := TRUE;
+    Main.M1.bPowerSelf := TRUE;
+    Main.M1.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M1.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M1.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M2.bHardwareEnable := TRUE;
+    Main.M2.bPowerSelf := TRUE;
+    Main.M2.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M2.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M2.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M3.bHardwareEnable := TRUE;
+    Main.M3.bPowerSelf := TRUE;
+    Main.M3.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M3.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M3.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M4.bHardwareEnable := TRUE;
+    Main.M4.bPowerSelf := TRUE;
+    Main.M4.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M4.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M4.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+
+    Main.M5.bHardwareEnable := TRUE;
+    Main.M5.bPowerSelf := TRUE;
+    Main.M5.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M5.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M5.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M6.bHardwareEnable := TRUE;
+    Main.M6.bPowerSelf := TRUE;
+    Main.M6.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M6.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M6.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M7.bHardwareEnable := TRUE;
+    Main.M7.bPowerSelf := TRUE;
+    Main.M7.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M7.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M7.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M8.bHardwareEnable := TRUE;
+    Main.M8.bPowerSelf := TRUE;
+    Main.M8.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M8.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M8.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M9.bHardwareEnable := TRUE;
+    Main.M9.bPowerSelf := TRUE;
+    Main.M9.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M9.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M9.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M10.bHardwareEnable := TRUE;
+    Main.M10.bPowerSelf := TRUE;
+    Main.M10.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M10.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M10.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M11.bHardwareEnable := TRUE;
+    Main.M11.bPowerSelf := TRUE;
+    Main.M11.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M11.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M11.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M12.bHardwareEnable := TRUE;
+    Main.M12.bPowerSelf := TRUE;
+    Main.M12.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M12.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M12.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M13.bHardwareEnable := TRUE;
+    Main.M13.bPowerSelf := TRUE;
+    Main.M13.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M13.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M13.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M14.bHardwareEnable := TRUE;
+    Main.M14.bPowerSelf := TRUE;
+    Main.M14.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M14.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M14.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M15.bHardwareEnable := TRUE;
+    Main.M15.bPowerSelf := TRUE;
+    Main.M15.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M15.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M15.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M16.bHardwareEnable := TRUE;
+    Main.M16.bPowerSelf := TRUE;
+    Main.M16.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M16.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M16.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M17.bHardwareEnable := TRUE;
+    Main.M17.bPowerSelf := TRUE;
+    Main.M17.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M17.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M17.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M18.bHardwareEnable := TRUE;
+    Main.M18.bPowerSelf := TRUE;
+    Main.M18.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M18.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M18.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M19.bHardwareEnable := TRUE;
+    Main.M19.bPowerSelf := TRUE;
+    Main.M19.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M19.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M19.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M20.bHardwareEnable := TRUE;
+    Main.M20.bPowerSelf := TRUE;
+    Main.M20.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M20.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M20.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M21.bHardwareEnable := TRUE;
+    Main.M21.bPowerSelf := TRUE;
+    Main.M21.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M21.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M21.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    Main.M22.bHardwareEnable := TRUE;
+    Main.M22.bPowerSelf := TRUE;
+    Main.M22.nEnableMode := ENUM_StageEnableMode.DURING_MOTION;
+//	Main.M22.nHomingMode := ENUM_EpicsHomeCmd.LOW_LIMIT;
+//	Main.M22.nEnableMode := ENUM_StageEnableMode.ALWAYS;
+
+    bInit := True;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

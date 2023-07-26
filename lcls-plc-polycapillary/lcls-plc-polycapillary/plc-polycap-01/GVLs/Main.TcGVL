@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="Main" Id="{0b1128b6-7864-4e13-b364-0e2ea06af732}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+
+    // U/N North: 5 Axes
+    {attribute 'pytmc' := 'pv: POLYCAP:DET:Z'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP1-EL1088-E4]^Channel 1^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP1-EL1088-E4]^Channel 2^Input'}
+    M1: DUT_MotionStage := (sName := 'POLYCAP:DET:Z');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:N:SWI'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP1-EL1088-E4]^Channel 3^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP1-EL1088-E4]^Channel 4^Input'}
+    M2: DUT_MotionStage := (sName := 'POLYCAP:CRY:N:SWI');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:N:X'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP1-EL1088-E4]^Channel 5^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP1-EL1088-E4]^Channel 6^Input'}
+    M3: DUT_MotionStage := (sName := 'POLYCAP:CRY:N:X');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:N:ROT'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP1-EL1088-E4]^Channel 7^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP1-EL1088-E4]^Channel 8^Input'}
+    M4: DUT_MotionStage := (sName := 'POLYCAP:CRY:N:ROT');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:N:Y'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP1-EL1088-E9]^Channel 1^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP1-EL1088-E9]^Channel 2^Input'}
+    M5: DUT_MotionStage := (sName := 'POLYCAP:CRY:N:Y');
+
+    // D/N North: 3 Axes
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:N:X'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP1-EL1088-E9]^Channel 3^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP1-EL1088-E9]^Channel 4^Input'}
+    M6: DUT_MotionStage := (sName := 'POLYCAP:PC:N:Z');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:N:X'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E3]^Channel 1^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E3]^Channel 2^Input'}
+    M7: DUT_MotionStage := (sName := 'POLYCAP:PC:N:Z');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:N:Y'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E3]^Channel 3^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E3]^Channel 4^Input'}
+    M8: DUT_MotionStage := (sName := 'POLYCAP:PC:N:Y');
+
+    // U/s South: 8 Axes
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:S:SWI'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E3]^Channel 5^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E3]^Channel 6^Input'}
+    M9: DUT_MotionStage := (sName := 'POLYCAP:CRY:S:SWI');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:S:X'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E3]^Channel 7^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E3]^Channel 8^Input'}
+    M10: DUT_MotionStage := (sName := 'POLYCAP:CRY:S:X');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:M:SWI'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E8]^Channel 1^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E8]^Channel 2^Input'}
+    M11: DUT_MotionStage := (sName := 'POLYCAP:CRY:M:SWI');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:M:X'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E8]^Channel 3^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E8]^Channel 4^Input'}
+    M12: DUT_MotionStage := (sName := 'POLYCAP:CRY:M:X');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:S:ROT'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E8]^Channel 5^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E8]^Channel 6^Input'}
+    M13: DUT_MotionStage := (sName := 'POLYCAP:CRY:S:ROT');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:S:Y'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E8]^Channel 7^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E8]^Channel 8^Input'}
+    M14: DUT_MotionStage := (sName := 'POLYCAP:CRY:S:Y');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:M:ROT'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E14]^Channel 1^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E14]^Channel 2^Input'}
+    M15: DUT_MotionStage := (sName := 'POLYCAP:CRY:M:ROT');
+
+    {attribute 'pytmc' := 'pv: POLYCAP:CRY:M:Y'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E14]^Channel 3^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E14]^Channel 4^Input'}
+    M16: DUT_MotionStage := (sName := 'POLYCAP:CRY:M:Y');
+
+    // D/S South: 6 Axes
+
+
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:S:X'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E14]^Channel 5^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E14]^Channel 6^Input'}
+    M17: DUT_MotionStage := (sName := 'POLYCAP:PC:S:X');
+
+
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:S:Z'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E14]^Channel 7^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E14]^Channel 8^Input'}
+    M18: DUT_MotionStage := (sName := 'POLYCAP:PC:S:Z');
+
+
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:M:X'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E19]^Channel 1^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E19]^Channel 2^Input'}
+    M19: DUT_MotionStage := (sName := 'POLYCAP:PC:M:X');
+
+
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:M:Z'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E19]^Channel 3^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E19]^Channel 4^Input'}
+    M20: DUT_MotionStage := (sName := 'POLYCAP:PC:M:Z');
+
+
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:S:Y'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E19]^Channel 5^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E19]^Channel 6^Input'}
+    M21: DUT_MotionStage := (sName := 'POLYCAP:PC:S:Y');
+
+
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:M:Y'}
+    {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E19]^Channel 7^Input;
+                              .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E19]^Channel 8^Input'}
+    M22: DUT_MotionStage := (sName := 'POLYCAP:PC:M:Y');
+
+
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
