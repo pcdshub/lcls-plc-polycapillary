@@ -1,0 +1,712 @@
+
+Links
+-----
+
+.. csv-table::
+    :header: Owner A, Item A, Owner B, Item B
+    :align: center
+
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 1, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 10, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 17 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 11, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 18 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 12, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 19 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 13, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 21 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 14, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 22 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 15, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 24 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 16, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 25 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 17, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 27 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 18, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 28 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 19, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 29 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 2, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 20, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 30 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 21, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 32 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 22, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 33 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 3, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 4, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 5, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 6, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 7, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 13 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 8, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 14 (EL7031), ENC Control compact^Set counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Error
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Moving negative
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Moving positive
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Ready
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Ready to enable
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Torque reduced
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Warning
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Digital input 1
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Digital input 2
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Status^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Control^Control^Enable
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Control^Control^Reduce torque
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Control^Control^Reset
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Drive^Outputs^Out^nDataOut2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), STM Velocity^Velocity
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nDataIn1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Counter value
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nDataIn2[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Latch value
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Status^Counter overflow
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Status^Counter underflow
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Status^Latch extern valid
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Status^Set counter done
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Status^Status of extern latch
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Status^Sync error
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState2, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Status compact^Status^TxPDO Toggle
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), WcState^InputToggle
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Inputs^In^nState4, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), WcState^WcState
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Control compact^Control^Enable latch extern on negative edge
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Control compact^Control^Enable latch extern on positive edge
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Outputs^Out^nCtrl1, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Control compact^Control^Set counter
+        TINC^NC-Task 1 SAF^Axes^Axis 9, Enc^Outputs^Out^nDataOut1[0], TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EK1122)^Term 12 (EK1100)^Term 16 (EL7031), ENC Control compact^Set counter value

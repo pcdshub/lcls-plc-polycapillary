@@ -1,0 +1,30 @@
+lcls-plc-polycapillary
+----------------------
+
+.. toctree::
+    :maxdepth: 2
+    :caption: lcls-plc-polycapillary
+
+    lcls-plc-polycapillary_pragmas
+    lcls-plc-polycapillary_nc
+    lcls-plc-polycapillary_ethercat
+    lcls-plc-polycapillary_boxes
+    lcls-plc-polycapillary_links
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: plc-polycap-01
+
+    lcls-plc-polycapillary_plc-polycap-01_summary
+    lcls-plc-polycapillary_plc-polycap-01_epics
+    lcls-plc-polycapillary_plc-polycap-01_source
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

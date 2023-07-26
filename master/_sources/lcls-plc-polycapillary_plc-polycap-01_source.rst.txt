@@ -1,0 +1,29 @@
+
+
+DUTs
+----
+
+
+GVLs
+----
+
+
+POUs
+----
+
+
+MAIN
+^^^^
+
+::
+
+    PROGRAM MAIN
+    VAR
+        iCount : INT;
+    END_VAR
+    iCount:=iCount+1;
+
+    END_PROGRAM
+
+
+

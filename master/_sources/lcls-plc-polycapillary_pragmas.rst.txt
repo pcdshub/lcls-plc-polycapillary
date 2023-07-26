@@ -1,0 +1,21 @@
+
+Pragmas
+-------
+
+.. csv-table::
+    :header: PLC Name, Total Pragmas, Errors
+    :align: center
+
+    :ref:`plc-polycap-01 <plc-polycap-01_overview_pragmas>`, 0, 0
+
+
+.. _plc-polycap-01_overview_pragmas:
+
+
+plc-polycap-01
+^^^^^^^^^^^^^^
+
+Total pragmas found: 0
+Total linter errors: 0
+
+
