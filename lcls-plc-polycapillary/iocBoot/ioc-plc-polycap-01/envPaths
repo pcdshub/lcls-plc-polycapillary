@@ -1,0 +1,2 @@
+epicsEnvSet("IOC_TOP", "/c/Users/opperman/Documents/PLC/lcls-plc-polycapillary/lcls-plc-polycapillary/iocBoot/ioc-plc-polycap-01")
+epicsEnvSet("IOC_DATA", "/cds/data/iocData")

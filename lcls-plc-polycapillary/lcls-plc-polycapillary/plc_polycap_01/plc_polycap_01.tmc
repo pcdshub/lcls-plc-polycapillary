@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{3FBFCDA8-04E5-928C-AEFE-B5EE737F9778}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{2D953458-D7F0-4C85-E013-8584FA465252}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="LCLS_General">ST_System</Name>
@@ -181,31 +181,31 @@
         <Name>bBusy</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80334952</GetCodeOffs>
+        <GetCodeOffs>80334944</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>bError</Name>
         <Type>BOOL</Type>
         <BitSize>8</BitSize>
-        <GetCodeOffs>80335024</GetCodeOffs>
+        <GetCodeOffs>80335016</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>hrErrorCode</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80335040</GetCodeOffs>
+        <GetCodeOffs>80335032</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nStringSize</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80335000</GetCodeOffs>
+        <GetCodeOffs>80334992</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sResult</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80335032</GetCodeOffs>
+        <GetCodeOffs>80335024</GetCodeOffs>
         <Properties>
           <Property>
             <Name>TcEncoding</Name>
@@ -1457,15 +1457,15 @@
         <Name>nId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80334824</GetCodeOffs>
-        <SetCodeOffs>80334872</SetCodeOffs>
+        <GetCodeOffs>80334816</GetCodeOffs>
+        <SetCodeOffs>80334864</SetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80334904</GetCodeOffs>
-        <SetCodeOffs>80334928</SetCodeOffs>
+        <GetCodeOffs>80334896</GetCodeOffs>
+        <SetCodeOffs>80334920</SetCodeOffs>
         <Properties>
           <Property>
             <Name>TcEncoding</Name>
@@ -1706,31 +1706,31 @@
         <Name>eSeverity</Name>
         <Type GUID="{B57D3F4A-0836-49B0-81C3-BED5F4817EC9}">TcEventSeverity</Type>
         <BitSize>16</BitSize>
-        <GetCodeOffs>80335136</GetCodeOffs>
+        <GetCodeOffs>80335128</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>ipSourceInfo</Name>
         <Type Namespace="LCLS_General.Tc3_EventLogger">I_TcSourceInfo</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80335096</GetCodeOffs>
+        <GetCodeOffs>80335088</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nEventId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80335272</GetCodeOffs>
+        <GetCodeOffs>80335264</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>nUniqueId</Name>
         <Type>UDINT</Type>
         <BitSize>32</BitSize>
-        <GetCodeOffs>80335280</GetCodeOffs>
+        <GetCodeOffs>80335272</GetCodeOffs>
       </PropertyItem>
       <PropertyItem>
         <Name>sEventClassName</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80335192</GetCodeOffs>
+        <GetCodeOffs>80335184</GetCodeOffs>
         <Properties>
           <Property>
             <Name>TcEncoding</Name>
@@ -1742,7 +1742,7 @@
         <Name>sEventText</Name>
         <Type>STRING(255)</Type>
         <BitSize>2048</BitSize>
-        <GetCodeOffs>80335288</GetCodeOffs>
+        <GetCodeOffs>80335280</GetCodeOffs>
         <Properties>
           <Property>
             <Name>TcEncoding</Name>
@@ -2335,7 +2335,7 @@
         <Name>nTimeSent</Name>
         <Type>ULINT</Type>
         <BitSize>64</BitSize>
-        <GetCodeOffs>80335344</GetCodeOffs>
+        <GetCodeOffs>80335336</GetCodeOffs>
         <Properties>
           <Property>
             <Name>TcDisplayTypeGUID</Name>
@@ -4725,7 +4725,8 @@
         <BitSize>16</BitSize>
         <BitOffs>5784</BitOffs>
         <Default>
-          <String> </String>
+          <String>
+          </String>
         </Default>
       </SubItem>
       <SubItem>
@@ -4788,7 +4789,8 @@
         <BitSize>24</BitSize>
         <BitOffs>5952</BitOffs>
         <Default>
-          <String>	</String>
+          <String>
+          </String>
         </Default>
       </SubItem>
       <SubItem>
@@ -4798,7 +4800,7 @@
         <BitOffs>5976</BitOffs>
         <Default>
           <String>
-</String>
+          </String>
         </Default>
       </SubItem>
       <Method>
@@ -21650,10 +21652,12 @@ contributing fast faults, unless the FFO is currently vetoed.
       </Properties>
       <Relations>
         <Relation Priority="100">
-          <Type GUID="{60392271-8688-4F4C-B404-618DF106325D}"/>
+          <Type GUID="{60392271-8688-4F4C-B404-618DF106325D}">
+          </Type>
         </Relation>
         <Relation Priority="100">
-          <Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}"/>
+          <Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}">
+          </Type>
         </Relation>
       </Relations>
     </DataType>
@@ -22419,22 +22423,28 @@ External Setpoint Generation:
           <Type GUID="{F794B740-82D7-4637-848E-4F74A711D038}">NCAXLESTRUCT_TOPLC4</Type>
         </Relation>
         <Relation Priority="100">
-          <Type GUID="{40BD39B0-C3EA-4F74-9F4F-5F1982786F7C}"/>
+          <Type GUID="{40BD39B0-C3EA-4F74-9F4F-5F1982786F7C}">
+          </Type>
         </Relation>
         <Relation Priority="100">
-          <Type GUID="{40BD39B2-C3EA-4F74-9F4F-5F1982786F7C}"/>
+          <Type GUID="{40BD39B2-C3EA-4F74-9F4F-5F1982786F7C}">
+          </Type>
         </Relation>
         <Relation Priority="100">
-          <Type GUID="{8CDE0C45-AB9D-42DB-BC94-1CF7521AB268}"/>
+          <Type GUID="{8CDE0C45-AB9D-42DB-BC94-1CF7521AB268}">
+          </Type>
         </Relation>
         <Relation Priority="100">
-          <Type GUID="{6A65C767-34E5-42BF-AD87-E1A503EAC7BE}"/>
+          <Type GUID="{6A65C767-34E5-42BF-AD87-E1A503EAC7BE}">
+          </Type>
         </Relation>
         <Relation Priority="100">
-          <Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}"/>
+          <Type GUID="{72F5AAAA-16DF-4ED3-8367-F6C8C3ADAE99}">
+          </Type>
         </Relation>
         <Relation Priority="100">
-          <Type GUID="{10036166-C9D3-404B-BDD3-323034AAA7F4}"/>
+          <Type GUID="{10036166-C9D3-404B-BDD3-323034AAA7F4}">
+          </Type>
         </Relation>
       </Relations>
     </DataType>
@@ -34410,18 +34420,6 @@ External Setpoint Generation:
             <BitOffs>636649728</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_SPEC.fbPOLYCAP_PC_N_Y.fbDriveVirtual.MasterAxis.NcToPlc</Name>
-            <BitSize>2048</BitSize>
-            <BaseType GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}">NCTOPLC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Input</Value>
-              </Property>
-            </Properties>
-            <BitOffs>636978240</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>PRG_SPEC.fbPOLYCAP_CRY_S_SWI.fbDriveVirtual.MasterAxis.NcToPlc</Name>
             <BitSize>2048</BitSize>
             <BaseType GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}">NCTOPLC_AXIS_REF</BaseType>
@@ -34444,6 +34442,18 @@ External Setpoint Generation:
               </Property>
             </Properties>
             <BitOffs>637635264</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_SPEC.fbPOLYCAP_PC_N_Y.fbDriveVirtual.MasterAxis.NcToPlc</Name>
+            <BitSize>2048</BitSize>
+            <BaseType GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}">NCTOPLC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Input</Value>
+              </Property>
+            </Properties>
+            <BitOffs>636978240</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_SPEC.fbPOLYCAP_CRY_M_SWI.fbDriveVirtual.MasterAxis.NcToPlc</Name>
@@ -37742,42 +37752,6 @@ External Setpoint Generation:
           <ContextId>0</ContextId>
           <ByteSize>81002496</ByteSize>
           <Symbol>
-            <Name>PRG_SPEC.fbPOLYCAP_DET_Z.fbDriveVirtual.MasterAxis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>634677632</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_SPEC.fbPOLYCAP_CRY_N_SWI.fbDriveVirtual.MasterAxis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>635006144</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_SPEC.fbPOLYCAP_CRY_N_X.fbDriveVirtual.MasterAxis.PlcToNc</Name>
-            <BitSize>1024</BitSize>
-            <BaseType GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}">PLCTONC_AXIS_REF</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcAddressType</Name>
-                <Value>Output</Value>
-              </Property>
-            </Properties>
-            <BitOffs>635334656</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>PRG_SPEC.fbPOLYCAP_CRY_N_ROT.fbDriveVirtual.MasterAxis.PlcToNc</Name>
             <BitSize>1024</BitSize>
             <BaseType GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}">PLCTONC_AXIS_REF</BaseType>
@@ -37824,6 +37798,42 @@ External Setpoint Generation:
               </Property>
             </Properties>
             <BitOffs>636648704</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_SPEC.fbPOLYCAP_DET_Z.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>634677632</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_SPEC.fbPOLYCAP_CRY_N_SWI.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>635006144</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>PRG_SPEC.fbPOLYCAP_CRY_N_X.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+            <BitSize>1024</BitSize>
+            <BaseType GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}">PLCTONC_AXIS_REF</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+            </Properties>
+            <BitOffs>635334656</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_SPEC.fbPOLYCAP_PC_N_Y.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -44408,6 +44418,12 @@ External Setpoint Generation:
             <BitOffs>634583840</BitOffs>
           </Symbol>
           <Symbol>
+            <Name>PRG_SPEC.stMotionStage</Name>
+            <BitSize>16</BitSize>
+            <BaseType>INT</BaseType>
+            <BitOffs>634583856</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>PMPS_PARAM.MAX_ASSERTIONS</Name>
             <Comment>Maximum number of BP requests in the arbiter</Comment>
             <BitSize>32</BitSize>
@@ -44489,12 +44505,6 @@ External Setpoint Generation:
             <BitOffs>634584320</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>PRG_SPEC.stMotionStage</Name>
-            <BitSize>16</BitSize>
-            <BaseType>INT</BaseType>
-            <BitOffs>634584608</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>PRG_SPEC.bInit</Name>
             <Comment> Only do some of the puts on init</Comment>
             <BitSize>8</BitSize>
@@ -44502,7 +44512,37 @@ External Setpoint Generation:
             <Default>
               <Bool>false</Bool>
             </Default>
+            <BitOffs>634584608</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Constants.bLittleEndian</Name>
+            <Comment> Does the target support multiple cores?</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Default>
+              <Bool>true</Bool>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
             <BitOffs>634584624</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Constants.bSimulationMode</Name>
+            <Comment> Does the target support multiple cores?</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Default>
+              <Bool>false</Bool>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>634584632</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Global_Variables.TcMcGlobal</Name>
@@ -44580,36 +44620,6 @@ External Setpoint Generation:
             <BitOffs>634591872</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>Constants.bLittleEndian</Name>
-            <Comment> Does the target support multiple cores?</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Default>
-              <Bool>true</Bool>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634592160</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>Constants.bSimulationMode</Name>
-            <Comment> Does the target support multiple cores?</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Default>
-              <Bool>false</Bool>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>634592168</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>Constants.nRegisterSize</Name>
             <Comment> Does the target support multiple cores?</Comment>
             <BitSize>16</BitSize>
@@ -44622,11 +44632,25 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
+            <BitOffs>634592160</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>Constants.nPackMode</Name>
+            <Comment> Does the target support multiple cores?</Comment>
+            <BitSize>16</BitSize>
+            <BaseType>UINT</BaseType>
+            <Default>
+              <Value>8</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
             <BitOffs>634592176</BitOffs>
           </Symbol>
           <Symbol>
             <Name>PRG_SPEC.fbPOLYCAP_DET_Z</Name>
-            <Comment> iCount : INT;</Comment>
             <BitSize>328512</BitSize>
             <BaseType Namespace="lcls_twincat_motion">FB_MotionStage</BaseType>
             <BitOffs>634676032</BitOffs>
@@ -44896,7 +44920,7 @@ External Setpoint Generation:
             <Default>
               <SubItem>
                 <Name>.sName</Name>
-                <String>POLYCAP:PC:N:Z</String>
+                <String>POLYCAP:PC:N:X</String>
               </SubItem>
             </Default>
             <Properties>
@@ -44928,7 +44952,7 @@ External Setpoint Generation:
             <Properties>
               <Property>
                 <Name>pytmc</Name>
-                <Value>pv: POLYCAP:PC:N:X</Value>
+                <Value>pv: POLYCAP:PC:N:Z</Value>
               </Property>
               <Property>
                 <Name>TcLinkTo</Name>
@@ -45394,21 +45418,6 @@ External Setpoint Generation:
             <BitOffs>642460544</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>Constants.nPackMode</Name>
-            <Comment> Does the target support multiple cores?</Comment>
-            <BitSize>16</BitSize>
-            <BaseType>UINT</BaseType>
-            <Default>
-              <Value>8</Value>
-            </Default>
-            <Properties>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>642460608</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>Constants.bFPUSupport</Name>
             <Comment> Does the target support multiple cores?</Comment>
             <BitSize>8</BitSize>
@@ -45421,7 +45430,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642460624</BitOffs>
+            <BitOffs>642460608</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.bMulticoreSupport</Name>
@@ -45435,7 +45444,7 @@ External Setpoint Generation:
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>642460632</BitOffs>
+            <BitOffs>642460616</BitOffs>
           </Symbol>
           <Symbol>
             <Name>Constants.RuntimeVersionNumeric</Name>
@@ -45644,11 +45653,11 @@ External Setpoint Generation:
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2023-07-26T15:26:06</Value>
+          <Value>2023-07-27T15:22:38</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
-          <Value>548864</Value>
+          <Value>585728</Value>
         </Property>
         <Property>
           <Name>GlobalDataSize</Name>

@@ -3,7 +3,6 @@
   <POU Name="PRG_SPEC" Id="{790d3e76-e969-4252-8a13-08f65b5816ff}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_SPEC
 VAR
-    // iCount : INT;
     fbPOLYCAP_DET_Z: FB_MotionStage;
     fbPOLYCAP_CRY_N_SWI: FB_MotionStage;
     fbPOLYCAP_CRY_N_X: FB_MotionStage;
@@ -35,8 +34,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// iCount:=iCount+1;
-fbPOLYCAP_DET_Z(stMotionStage:=Main.M1);
+      <ST><![CDATA[fbPOLYCAP_DET_Z(stMotionStage:=Main.M1);
 fbPOLYCAP_CRY_N_SWI(stMotionStage:=Main.M2);
 fbPOLYCAP_CRY_N_X(stMotionStage:=Main.M3);
 fbPOLYCAP_CRY_N_ROT(stMotionStage:=Main.M4);

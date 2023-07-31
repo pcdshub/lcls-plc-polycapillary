@@ -57,7 +57,7 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="plc-polycap-01.tmc">
+    <None Include="plc_polycap_01.tmc">
       <SubType>Content</SubType>
     </None>
   </ItemGroup>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.35" ClassName="CNcSafTaskDef" SubType="0">
+	<NC>
+		<SafTask Priority="4" CycleTime="20000" AmsPort="501" IoAtBegin="true" SafTaskInfo="256">
+			<Name>NC-Task 1 SAF</Name>
+			<Vars VarGrpType="1" InsertType="1">
+				<Name>Inputs</Name>
+			</Vars>
+			<Vars VarGrpType="2" InsertType="1">
+				<Name>Outputs</Name>
+			</Vars>
+			<Image Id="3" AddrType="1" ImageType="1">
+				<Name>Image</Name>
+			</Image>
+		</SafTask>
+		<SvbTask Priority="8" CycleTime="100000" AmsPort="511">
+			<Name>NC-Task 1 SVB</Name>
+		</SvbTask>
+		<Axis File="Axis 1 POLYCAP-DET-Z.xti" Id="1"/>
+		<Axis File="Axis 2 POLYCAP-CRY-N-SWI.xti" Id="2"/>
+		<Axis File="Axis 3 POLYCAP-CRY-N-X.xti" Id="3"/>
+		<Axis File="Axis 4 POLYCAP-CRY-N-ROT.xti" Id="4"/>
+		<Axis File="Axis 5 POLYCAP-CRY-N-Y.xti" Id="5"/>
+		<Axis File="Axis 6 POLYCAP-PC-N-X.xti" Id="6"/>
+		<Axis File="Axis 7 POLYCAP-PC-N-Z.xti" Id="7"/>
+		<Axis File="Axis 8 POLYCAP-PC-N-Y.xti" Id="8"/>
+		<Axis File="Axis 9 POLYCAP-CRY-S-SWI.xti" Id="9"/>
+		<Axis File="Axis 10 POLYCAP-CRY-S-X.xti" Id="10"/>
+		<Axis File="Axis 11 POLYCAP-CRY-M-SWI.xti" Id="11"/>
+		<Axis File="Axis 12 POLYCAP-CRY-M-X.xti" Id="12"/>
+		<Axis File="Axis 13 POLYCAP-CRY-S-ROT.xti" Id="13"/>
+		<Axis File="Axis 14 POLYCAP-CRY-S-Y.xti" Id="14"/>
+		<Axis File="Axis 15 POLYCAP-CRY-M-ROT.xti" Id="15"/>
+		<Axis File="Axis 16 POLYCAP-CRY-M-Y.xti" Id="16"/>
+		<Axis File="Axis 17 POLYCAP-PC-S-X.xti" Id="17"/>
+		<Axis File="Axis 18 POLYCAP-PC-S-Z.xti" Id="18"/>
+		<Axis File="Axis 19 POLYCAP-PC-M-X.xti" Id="19"/>
+		<Axis File="Axis 20 POLYCAP-PC-M-Z.xti" Id="20"/>
+		<Axis File="Axis 21 POLYCAP-PC-S-Y.xti" Id="21"/>
+		<Axis File="Axis 22 POLYCAP-PC-M-Y.xti" Id="22"/>
+	</NC>
+</TcSmItem>

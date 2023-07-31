@@ -34,9 +34,9 @@ VAR_GLOBAL
     {attribute 'pytmc' := 'pv: POLYCAP:PC:N:X'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP1-EL1088-E9]^Channel 3^Input;
                               .bLimitBackwardEnable := TIIB[POLYCAP1-EL1088-E9]^Channel 4^Input'}
-    M6: DUT_MotionStage := (sName := 'POLYCAP:PC:N:Z');
+    M6: DUT_MotionStage := (sName := 'POLYCAP:PC:N:X');
 
-    {attribute 'pytmc' := 'pv: POLYCAP:PC:N:X'}
+    {attribute 'pytmc' := 'pv: POLYCAP:PC:N:Z'}
     {attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[POLYCAP2-EL1088-E3]^Channel 1^Input;
                               .bLimitBackwardEnable := TIIB[POLYCAP2-EL1088-E3]^Channel 2^Input'}
     M7: DUT_MotionStage := (sName := 'POLYCAP:PC:N:Z');
